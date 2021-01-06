@@ -1,14 +1,13 @@
 //
-//  Mini_BBC_SportTests.swift
-//  Mini-BBC-SportTests
+//  Mini_BBC_SportTests2.swift
+//  Mini-BBC-SportTests2
 //
-//  Created by IWAN EVANS on 15/12/2020.
+//  Created by IWAN EVANS on 04/01/2021.
 //
 
 import XCTest
-@testable import Mini_BBC_Sport
 
-class Mini_BBC_SportTests: XCTestCase {
+class Mini_BBC_SportTests2: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -25,7 +24,7 @@ class Mini_BBC_SportTests: XCTestCase {
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
-        self.measure {
+        measure {
             // Put the code you want to measure the time of here.
         }
     }
