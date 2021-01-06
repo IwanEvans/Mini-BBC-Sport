@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct ArticleModel {
+    
+    let title : String
+    let url : String
+    let image : Image
+    
+}
