@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		672D26BD25AC8F1700F1CAF4 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672D26BC25AC8F1700F1CAF4 /* MockURLSession.swift */; };
+		672D26C225AC927700F1CAF4 /* StatsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672D26C125AC927700F1CAF4 /* StatsManagerTests.swift */; };
 		673232672588DF920063830B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673232662588DF920063830B /* DataManager.swift */; };
 		6732326D2588F2460063830B /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6732326C2588F2460063830B /* ArticleViewController.swift */; };
 		6750A807258A073100DB8D06 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6750A805258A073100DB8D06 /* ArticleCell.swift */; };
@@ -19,27 +21,23 @@
 		678FE78B2588CDD700FD9C6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 678FE7892588CDD700FD9C6B /* Main.storyboard */; };
 		678FE78D2588CDD900FD9C6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 678FE78C2588CDD900FD9C6B /* Assets.xcassets */; };
 		678FE7902588CDD900FD9C6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 678FE78E2588CDD900FD9C6B /* LaunchScreen.storyboard */; };
-		67995F7F25A343D7000A5214 /* Mini_BBC_SportTests2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67995F7E25A343D7000A5214 /* Mini_BBC_SportTests2.swift */; };
+		67948F2225A75CCD00492062 /* Mini_BBC_SportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67948F2125A75CCD00492062 /* Mini_BBC_SportTests.swift */; };
+		67948F2B25A75CE800492062 /* DataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67948F0C25A75B8400492062 /* DataManagerTests.swift */; };
+		67948F4A25A769AF00492062 /* Mini_BBC_SportUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67948F4925A769AF00492062 /* Mini_BBC_SportUITests.swift */; };
+		67BF35A225A8A88C0044D487 /* ArticleSafariViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BF35A125A8A88C0044D487 /* ArticleSafariViewDelegate.swift */; };
+		67BF35A725A8B3260044D487 /* StatsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BF35A625A8B3260044D487 /* StatsManager.swift */; };
 		67D45DB825A5CF15001A7BB8 /* ArticleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D45DB725A5CF15001A7BB8 /* ArticleData.swift */; };
-		67EBDB7925A4D6680036B247 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678FE7872588CDD700FD9C6B /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		678FE7972588CDDA00FD9C6B /* PBXContainerItemProxy */ = {
+		67948F2425A75CCD00492062 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 678FE7782588CDD700FD9C6B /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 678FE77F2588CDD700FD9C6B;
 			remoteInfo = "Mini-BBC-Sport";
 		};
-		678FE7A22588CDDA00FD9C6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 678FE7782588CDD700FD9C6B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 678FE77F2588CDD700FD9C6B;
-			remoteInfo = "Mini-BBC-Sport";
-		};
-		67995F8125A343D7000A5214 /* PBXContainerItemProxy */ = {
+		67948F4C25A769AF00492062 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 678FE7782588CDD700FD9C6B /* Project object */;
 			proxyType = 1;
@@ -49,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		672D26BC25AC8F1700F1CAF4 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		672D26C125AC927700F1CAF4 /* StatsManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsManagerTests.swift; sourceTree = "<group>"; };
 		673232662588DF920063830B /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		6732326C2588F2460063830B /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		6750A805258A073100DB8D06 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
@@ -63,11 +63,16 @@
 		678FE78C2588CDD900FD9C6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		678FE78F2588CDD900FD9C6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		678FE7912588CDD900FD9C6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		678FE7962588CDDA00FD9C6B /* Mini-BBC-SportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mini-BBC-SportTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		678FE7A12588CDDA00FD9C6B /* Mini-BBC-SportUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mini-BBC-SportUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		67995F7C25A343D7000A5214 /* Mini-BBC-SportTests2.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mini-BBC-SportTests2.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		67995F7E25A343D7000A5214 /* Mini_BBC_SportTests2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini_BBC_SportTests2.swift; sourceTree = "<group>"; };
+		67948F0C25A75B8400492062 /* DataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerTests.swift; sourceTree = "<group>"; };
+		67948F1F25A75CCD00492062 /* Mini-BBC-SportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mini-BBC-SportTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67948F2125A75CCD00492062 /* Mini_BBC_SportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini_BBC_SportTests.swift; sourceTree = "<group>"; };
+		67948F2325A75CCD00492062 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67948F4725A769AF00492062 /* Mini-BBC-SportUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mini-BBC-SportUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67948F4925A769AF00492062 /* Mini_BBC_SportUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini_BBC_SportUITests.swift; sourceTree = "<group>"; };
+		67948F4B25A769AF00492062 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67995F8025A343D7000A5214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67BF35A125A8A88C0044D487 /* ArticleSafariViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleSafariViewDelegate.swift; sourceTree = "<group>"; };
+		67BF35A625A8B3260044D487 /* StatsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsManager.swift; sourceTree = "<group>"; };
 		67D45DB725A5CF15001A7BB8 /* ArticleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,21 +84,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		678FE7932588CDDA00FD9C6B /* Frameworks */ = {
+		67948F1C25A75CCD00492062 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		678FE79E2588CDDA00FD9C6B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		67995F7925A343D7000A5214 /* Frameworks */ = {
+		67948F4425A769AF00492062 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -108,6 +106,8 @@
 			children = (
 				678FE7822588CDD700FD9C6B /* Mini-BBC-Sport */,
 				67995F7D25A343D7000A5214 /* Mini-BBC-SportTests2 */,
+				67948F2025A75CCD00492062 /* Mini-BBC-SportTests */,
+				67948F4825A769AF00492062 /* Mini-BBC-SportUITests */,
 				678FE7812588CDD700FD9C6B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -116,9 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				678FE7802588CDD700FD9C6B /* Mini-BBC-Sport.app */,
-				678FE7962588CDDA00FD9C6B /* Mini-BBC-SportTests.xctest */,
-				678FE7A12588CDDA00FD9C6B /* Mini-BBC-SportUITests.xctest */,
-				67995F7C25A343D7000A5214 /* Mini-BBC-SportTests2.xctest */,
+				67948F1F25A75CCD00492062 /* Mini-BBC-SportTests.xctest */,
+				67948F4725A769AF00492062 /* Mini-BBC-SportUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,6 +132,8 @@
 				678FE7B82588D5AC00FD9C6B /* Controller */,
 				678FE78C2588CDD900FD9C6B /* Assets.xcassets */,
 				678FE7912588CDD900FD9C6B /* Info.plist */,
+				67BF35A125A8A88C0044D487 /* ArticleSafariViewDelegate.swift */,
+				67BF35A625A8B3260044D487 /* StatsManager.swift */,
 			);
 			path = "Mini-BBC-Sport";
 			sourceTree = "<group>";
@@ -168,10 +169,30 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		67948F2025A75CCD00492062 /* Mini-BBC-SportTests */ = {
+			isa = PBXGroup;
+			children = (
+				67948F0C25A75B8400492062 /* DataManagerTests.swift */,
+				67948F2125A75CCD00492062 /* Mini_BBC_SportTests.swift */,
+				67948F2325A75CCD00492062 /* Info.plist */,
+				672D26BC25AC8F1700F1CAF4 /* MockURLSession.swift */,
+				672D26C125AC927700F1CAF4 /* StatsManagerTests.swift */,
+			);
+			path = "Mini-BBC-SportTests";
+			sourceTree = "<group>";
+		};
+		67948F4825A769AF00492062 /* Mini-BBC-SportUITests */ = {
+			isa = PBXGroup;
+			children = (
+				67948F4925A769AF00492062 /* Mini_BBC_SportUITests.swift */,
+				67948F4B25A769AF00492062 /* Info.plist */,
+			);
+			path = "Mini-BBC-SportUITests";
+			sourceTree = "<group>";
+		};
 		67995F7D25A343D7000A5214 /* Mini-BBC-SportTests2 */ = {
 			isa = PBXGroup;
 			children = (
-				67995F7E25A343D7000A5214 /* Mini_BBC_SportTests2.swift */,
 				67995F8025A343D7000A5214 /* Info.plist */,
 			);
 			path = "Mini-BBC-SportTests2";
@@ -197,59 +218,41 @@
 			productReference = 678FE7802588CDD700FD9C6B /* Mini-BBC-Sport.app */;
 			productType = "com.apple.product-type.application";
 		};
-		678FE7952588CDDA00FD9C6B /* Mini-BBC-SportTests */ = {
+		67948F1E25A75CCD00492062 /* Mini-BBC-SportTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 678FE7AD2588CDDA00FD9C6B /* Build configuration list for PBXNativeTarget "Mini-BBC-SportTests" */;
+			buildConfigurationList = 67948F2625A75CCD00492062 /* Build configuration list for PBXNativeTarget "Mini-BBC-SportTests" */;
 			buildPhases = (
-				678FE7922588CDDA00FD9C6B /* Sources */,
-				678FE7932588CDDA00FD9C6B /* Frameworks */,
-				678FE7942588CDDA00FD9C6B /* Resources */,
+				67948F1B25A75CCD00492062 /* Sources */,
+				67948F1C25A75CCD00492062 /* Frameworks */,
+				67948F1D25A75CCD00492062 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				678FE7982588CDDA00FD9C6B /* PBXTargetDependency */,
+				67948F2525A75CCD00492062 /* PBXTargetDependency */,
 			);
 			name = "Mini-BBC-SportTests";
 			productName = "Mini-BBC-SportTests";
-			productReference = 678FE7962588CDDA00FD9C6B /* Mini-BBC-SportTests.xctest */;
+			productReference = 67948F1F25A75CCD00492062 /* Mini-BBC-SportTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		678FE7A02588CDDA00FD9C6B /* Mini-BBC-SportUITests */ = {
+		67948F4625A769AF00492062 /* Mini-BBC-SportUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 678FE7B02588CDDA00FD9C6B /* Build configuration list for PBXNativeTarget "Mini-BBC-SportUITests" */;
+			buildConfigurationList = 67948F4E25A769AF00492062 /* Build configuration list for PBXNativeTarget "Mini-BBC-SportUITests" */;
 			buildPhases = (
-				678FE79D2588CDDA00FD9C6B /* Sources */,
-				678FE79E2588CDDA00FD9C6B /* Frameworks */,
-				678FE79F2588CDDA00FD9C6B /* Resources */,
+				67948F4325A769AF00492062 /* Sources */,
+				67948F4425A769AF00492062 /* Frameworks */,
+				67948F4525A769AF00492062 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				678FE7A32588CDDA00FD9C6B /* PBXTargetDependency */,
+				67948F4D25A769AF00492062 /* PBXTargetDependency */,
 			);
 			name = "Mini-BBC-SportUITests";
 			productName = "Mini-BBC-SportUITests";
-			productReference = 678FE7A12588CDDA00FD9C6B /* Mini-BBC-SportUITests.xctest */;
+			productReference = 67948F4725A769AF00492062 /* Mini-BBC-SportUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		67995F7B25A343D7000A5214 /* Mini-BBC-SportTests2 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 67995F8525A343D7000A5214 /* Build configuration list for PBXNativeTarget "Mini-BBC-SportTests2" */;
-			buildPhases = (
-				67995F7825A343D7000A5214 /* Sources */,
-				67995F7925A343D7000A5214 /* Frameworks */,
-				67995F7A25A343D7000A5214 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				67995F8225A343D7000A5214 /* PBXTargetDependency */,
-			);
-			name = "Mini-BBC-SportTests2";
-			productName = "Mini-BBC-SportTests2";
-			productReference = 67995F7C25A343D7000A5214 /* Mini-BBC-SportTests2.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -263,16 +266,11 @@
 					678FE77F2588CDD700FD9C6B = {
 						CreatedOnToolsVersion = 12.2;
 					};
-					678FE7952588CDDA00FD9C6B = {
-						CreatedOnToolsVersion = 12.2;
-						LastSwiftMigration = 1230;
+					67948F1E25A75CCD00492062 = {
+						CreatedOnToolsVersion = 12.3;
 						TestTargetID = 678FE77F2588CDD700FD9C6B;
 					};
-					678FE7A02588CDDA00FD9C6B = {
-						CreatedOnToolsVersion = 12.2;
-						TestTargetID = 678FE77F2588CDD700FD9C6B;
-					};
-					67995F7B25A343D7000A5214 = {
+					67948F4625A769AF00492062 = {
 						CreatedOnToolsVersion = 12.3;
 						TestTargetID = 678FE77F2588CDD700FD9C6B;
 					};
@@ -292,9 +290,8 @@
 			projectRoot = "";
 			targets = (
 				678FE77F2588CDD700FD9C6B /* Mini-BBC-Sport */,
-				678FE7952588CDDA00FD9C6B /* Mini-BBC-SportTests */,
-				678FE7A02588CDDA00FD9C6B /* Mini-BBC-SportUITests */,
-				67995F7B25A343D7000A5214 /* Mini-BBC-SportTests2 */,
+				67948F1E25A75CCD00492062 /* Mini-BBC-SportTests */,
+				67948F4625A769AF00492062 /* Mini-BBC-SportUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -311,21 +308,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		678FE7942588CDDA00FD9C6B /* Resources */ = {
+		67948F1D25A75CCD00492062 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		678FE79F2588CDDA00FD9C6B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		67995F7A25A343D7000A5214 /* Resources */ = {
+		67948F4525A769AF00492062 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -341,56 +331,49 @@
 			files = (
 				678FE7882588CDD700FD9C6B /* ViewController.swift in Sources */,
 				67D45DB825A5CF15001A7BB8 /* ArticleData.swift in Sources */,
+				67BF35A725A8B3260044D487 /* StatsManager.swift in Sources */,
 				673232672588DF920063830B /* DataManager.swift in Sources */,
 				676E4CFE2590B5C100D65494 /* CollectionViewCell.swift in Sources */,
 				6750A807258A073100DB8D06 /* ArticleCell.swift in Sources */,
 				676E4D062590B60F00D65494 /* CollectionViewController.swift in Sources */,
+				67BF35A225A8A88C0044D487 /* ArticleSafariViewDelegate.swift in Sources */,
 				6732326D2588F2460063830B /* ArticleViewController.swift in Sources */,
 				678FE7842588CDD700FD9C6B /* AppDelegate.swift in Sources */,
 				678FE7862588CDD700FD9C6B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		678FE7922588CDDA00FD9C6B /* Sources */ = {
+		67948F1B25A75CCD00492062 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				672D26BD25AC8F1700F1CAF4 /* MockURLSession.swift in Sources */,
+				67948F2225A75CCD00492062 /* Mini_BBC_SportTests.swift in Sources */,
+				67948F2B25A75CE800492062 /* DataManagerTests.swift in Sources */,
+				672D26C225AC927700F1CAF4 /* StatsManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		678FE79D2588CDDA00FD9C6B /* Sources */ = {
+		67948F4325A769AF00492062 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		67995F7825A343D7000A5214 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				67EBDB7925A4D6680036B247 /* ViewController.swift in Sources */,
-				67995F7F25A343D7000A5214 /* Mini_BBC_SportTests2.swift in Sources */,
+				67948F4A25A769AF00492062 /* Mini_BBC_SportUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		678FE7982588CDDA00FD9C6B /* PBXTargetDependency */ = {
+		67948F2525A75CCD00492062 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 678FE77F2588CDD700FD9C6B /* Mini-BBC-Sport */;
-			targetProxy = 678FE7972588CDDA00FD9C6B /* PBXContainerItemProxy */;
+			targetProxy = 67948F2425A75CCD00492062 /* PBXContainerItemProxy */;
 		};
-		678FE7A32588CDDA00FD9C6B /* PBXTargetDependency */ = {
+		67948F4D25A769AF00492062 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 678FE77F2588CDD700FD9C6B /* Mini-BBC-Sport */;
-			targetProxy = 678FE7A22588CDDA00FD9C6B /* PBXContainerItemProxy */;
-		};
-		67995F8225A343D7000A5214 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 678FE77F2588CDD700FD9C6B /* Mini-BBC-Sport */;
-			targetProxy = 67995F8125A343D7000A5214 /* PBXContainerItemProxy */;
+			targetProxy = 67948F4C25A769AF00492062 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -568,16 +551,14 @@
 			};
 			name = Release;
 		};
-		678FE7AE2588CDDA00FD9C6B /* Debug */ = {
+		67948F2725A75CCD00492062 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D9GBDPNCGT;
 				INFOPLIST_FILE = "Mini-BBC-SportTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -585,24 +566,20 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iwanevans.Mini-BBC-SportTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Mini-BBC-SportTests-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mini-BBC-Sport.app/Mini-BBC-Sport";
 			};
 			name = Debug;
 		};
-		678FE7AF2588CDDA00FD9C6B /* Release */ = {
+		67948F2825A75CCD00492062 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D9GBDPNCGT;
 				INFOPLIST_FILE = "Mini-BBC-SportTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -610,20 +587,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iwanevans.Mini-BBC-SportTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Mini-BBC-SportTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mini-BBC-Sport.app/Mini-BBC-Sport";
 			};
 			name = Release;
 		};
-		678FE7B12588CDDA00FD9C6B /* Debug */ = {
+		67948F4F25A769AF00492062 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D9GBDPNCGT;
 				INFOPLIST_FILE = "Mini-BBC-SportUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -637,13 +613,13 @@
 			};
 			name = Debug;
 		};
-		678FE7B22588CDDA00FD9C6B /* Release */ = {
+		67948F5025A769AF00492062 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D9GBDPNCGT;
 				INFOPLIST_FILE = "Mini-BBC-SportUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -654,48 +630,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Mini-BBC-Sport";
-			};
-			name = Release;
-		};
-		67995F8325A343D7000A5214 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D9GBDPNCGT;
-				INFOPLIST_FILE = "Mini-BBC-SportTests2/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.iwanevans.Mini-BBC-SportTests2";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mini-BBC-Sport.app/Mini-BBC-Sport";
-			};
-			name = Debug;
-		};
-		67995F8425A343D7000A5214 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D9GBDPNCGT;
-				INFOPLIST_FILE = "Mini-BBC-SportTests2/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.iwanevans.Mini-BBC-SportTests2";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mini-BBC-Sport.app/Mini-BBC-Sport";
 			};
 			name = Release;
 		};
@@ -720,29 +654,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		678FE7AD2588CDDA00FD9C6B /* Build configuration list for PBXNativeTarget "Mini-BBC-SportTests" */ = {
+		67948F2625A75CCD00492062 /* Build configuration list for PBXNativeTarget "Mini-BBC-SportTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				678FE7AE2588CDDA00FD9C6B /* Debug */,
-				678FE7AF2588CDDA00FD9C6B /* Release */,
+				67948F2725A75CCD00492062 /* Debug */,
+				67948F2825A75CCD00492062 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		678FE7B02588CDDA00FD9C6B /* Build configuration list for PBXNativeTarget "Mini-BBC-SportUITests" */ = {
+		67948F4E25A769AF00492062 /* Build configuration list for PBXNativeTarget "Mini-BBC-SportUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				678FE7B12588CDDA00FD9C6B /* Debug */,
-				678FE7B22588CDDA00FD9C6B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		67995F8525A343D7000A5214 /* Build configuration list for PBXNativeTarget "Mini-BBC-SportTests2" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				67995F8325A343D7000A5214 /* Debug */,
-				67995F8425A343D7000A5214 /* Release */,
+				67948F4F25A769AF00492062 /* Debug */,
+				67948F5025A769AF00492062 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

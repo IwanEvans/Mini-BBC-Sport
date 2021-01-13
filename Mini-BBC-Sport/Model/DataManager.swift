@@ -24,8 +24,11 @@ class DataManager {
                     print(error as Any)
                 }
                 if let safeData = data {
+                    
+                    if let articleInfo = try? self.parseJSON(JSONdata: safeData) {
+                        self.articleInfo = articleInfo
+                    }
                    
-                    self.parseJSON(JSONdata: safeData)
                     completion()
                 }
             
@@ -35,24 +38,32 @@ class DataManager {
     
     
     //MARK:Parse JSON
-    func parseJSON(JSONdata: Data) {
+    func parseJSON(JSONdata: Data) throws -> [Items] {
         
         
         let decoder = JSONDecoder()
         
+        
         do {
-            
             let decodedData = try decoder.decode(FullArticleData.self, from: JSONdata)
+        
 
-            articleInfo = decodedData.data.items
+            return decodedData.data.items
             
         } catch {
-           print(error)
+            
+            throw MyError.runtimeError("")
+            
         }
+        
         
     }
     
     
+}
+
+enum MyError: Error {
+    case runtimeError(String)
 }
 
 

@@ -23,6 +23,7 @@ class ArticleViewController: UIViewController {
         registerOutlet.layer.shadowOpacity = 0.2
         signInOutlet.layer.shadowOffset = CGSize(width: 2, height: 1)
         registerOutlet.layer.shadowOffset = CGSize(width: 2, height: 1)
+        dismissOutlet.accessibilityIdentifier = "skip-button"
         
        
         

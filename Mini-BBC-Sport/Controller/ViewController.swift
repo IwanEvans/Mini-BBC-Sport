@@ -19,8 +19,11 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
     let defaults = UserDefaults.standard
     var clickedArticleCellURL : String = ""
     var urlArray = [String]()
-    
     var dataManager = DataManager()
+    let statsManager = StatsManager()
+    var articleDelegate : ArticleSafariViewDelegate?
+        
+       // ArticleSafariViewDelegate(statsManager: statsManager)
     
     @IBAction func sharePressed(_ sender: UIButton) {
         
@@ -47,6 +50,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
                 self.userNotificationCenter.delegate = self
                 self.requestNotificationAuthorization()
                 self.sendNotification()
+                self.articleDelegate = ArticleSafariViewDelegate(statsManager: self.statsManager)
 
                 let loadURLsArray = self.defaults.stringArray(forKey: "SavedURLs") ?? [String]()
                 print("\(loadURLsArray)")
@@ -123,6 +127,8 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
     
 }
 
+//MARK:Tableview
+
 extension ViewController:  UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -154,25 +160,17 @@ extension ViewController: UITableViewDelegate {
         if let url = URL(string: "\(clickedArticleCellURL)") {
             
             let safariController = SFSafariViewController(url: url)
+            
+            articleDelegate?.startTimer = Date()
+           
+            
+            
+            safariController.delegate = articleDelegate
+            //articleStartTimer = Date()
             present(safariController, animated: true, completion: nil)
             
-            let tappedEndpoint = URL(string: "https://bbc.github.io/sport-app-dev-tech-challenge/stats?event=articleTapped&data=\(clickedArticleCellURL)")!
             
-            //here i need to get the loadtime as a variable from the API call and pass that into the url
-            //let loadedEndpoint = URL(string: "https://bbc.github.io/sport-app-dev-tech-challenge/stats? //event=pageLoadSuccess&data=loadTime")!
-            
-            let task = URLSession.shared.dataTask(with: tappedEndpoint) {(data, response, error) in
-                guard let data = data else { return }
-                print(String(data: data, encoding: .utf8)!)
-                
-            }
-            //
-            //            let loadTask = URLSession.shared.dataTask(with: loadedEndpoint) {(data, response, error) in
-            //                guard let data = data else { return }
-            //                print(String(data: data, encoding: .utf8)!)
-            //            }
-            task.resume()
-            //loadTask.resume()
+            statsManager.sendStat(stat: .tapped(clickedArticleCellURL))
         }
         
     }

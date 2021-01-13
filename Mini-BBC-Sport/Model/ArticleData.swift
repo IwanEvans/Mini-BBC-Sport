@@ -21,14 +21,14 @@ struct ArticleData: Decodable {
     let items: [Items]
 }
 
-struct Items: Decodable {
+struct Items: Decodable, Equatable {
     let title : String
     let url : String
     let lastUpdatedTimestamp : Int
     let image : Image
 }
 
-struct Image: Decodable {
+struct Image: Decodable, Equatable {
     let small: URL
 }
 
